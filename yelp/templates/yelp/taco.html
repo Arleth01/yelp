@@ -32,13 +32,17 @@
           </p>
         </div>
       </section>
+      <div class="container">
+      <div class="row">
+        <div class="col-2"></div>
+        <div class="col-8">
       {% for food in foods.all %}
       <div class="album py-5 bg-light">
         <div class="container">
 
           <div class="row">
             <div class="col-md-4">
-              <div class="card mb-4 shadow-sm">
+              <div class="card mb-4 shadow-sm" style="width: 18rem;">
                 <img class="card-img-top" style="height:200px;width:200px"src="../food/{{food.image.url}}" alt="Card image cap">
                 <div class="card-body">
                   <p class="card-text">{{food.summary}}</p>
@@ -51,8 +55,15 @@
                 </div>
               </div>
             </div>
-
+          </div>
+        </div>
+      </div>
 {% endfor %}
+</div>
+<div class="col-2"></div>
+</div>
+</div>
+
     </main>
 
 
